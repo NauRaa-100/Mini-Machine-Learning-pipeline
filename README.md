@@ -1,5 +1,5 @@
 
-#  Machine Learning Fundamentals — Day-by-Day Practice
+#  Machine Learning Fundamentals Day-by-Day Practice
 
 A full **20-day self-learning journey** covering **Supervised** and **Unsupervised Learning** techniques — from simple regression models to dimensionality reduction and clustering evaluation.
 
