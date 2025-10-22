@@ -128,7 +128,7 @@ print('-------------Seperate---------------')
 
 
 
-## 📘 Day 4 – Logistic Regression → (study hours → pass/fail)
+##  Logistic Regression → (study hours → pass/fail)
 
 
 np.random.seed(42)
@@ -162,7 +162,7 @@ print('-------------Seperate---------------')
 
 
 
-## 🎓 Day 5 – Logistic Regression (2 features) → (GPA + activities → accepted)
+##  Logistic Regression (2 features) → (GPA + activities → accepted)
 
 
 np.random.seed(42)
@@ -198,7 +198,7 @@ print('-------------Seperate---------------')
 
 
 
-## 🚢 Day 6 – Decision Tree Classifier → (Titanic-like dataset)
+##  Decision Tree Classifier → (Titanic-like dataset)
 
 
 np.random.seed(42)
@@ -234,7 +234,7 @@ print('-------------Seperate---------------')
 
 
 
-## 📊 Day 8 – Metrics (MSE, MAE, RMSE, R²)
+## Metrics (MSE, MAE, RMSE, R²)
 
 
 np.random.seed(42)
@@ -246,7 +246,7 @@ df.head()
 
 
 
-## 📈 Day 9 – Metrics (confusion matrix, precision, recall, F1, ROC)
+## Metrics (confusion matrix, precision, recall, F1, ROC)
 
 
 np.random.seed(42)
@@ -259,7 +259,7 @@ df = pd.DataFrame({'True': true, 'Predicted': pred})
 df.head()
 
 
-## ⚙️ Day 10 – Train/Test Split + Cross-validation
+##  Train/Test Split + Cross-validation
 
 
 np.random.seed(42)
@@ -285,7 +285,7 @@ print('-- Accuracy with Cross validation => ',cross)
 
 print('-------------Seperate---------------') 
 
-## 🔍 Day 11 – GridSearchCV + Hyperparameter tuning (Decision Tree)
+##  GridSearchCV + Hyperparameter tuning (Decision Tree)
 
 
 np.random.seed(42)
@@ -322,7 +322,7 @@ plt.show()
 
 
 
-## 👥 Day 15 – KMeans Clustering (customer segmentation)
+## KMeans Clustering (customer segmentation)
 
 
 from sklearn.datasets import make_blobs
@@ -353,7 +353,7 @@ plt.show()
 
 
 
-## 🌳 Day 16 – Hierarchical Clustering (dendrogram)
+## Hierarchical Clustering (dendrogram)
 
 
 from sklearn.datasets import make_blobs
@@ -379,7 +379,6 @@ cluster_from_dend=fcluster(z,t=12,criterion='distance')
 df['cluster_from_dend']=cluster_from_dend
 
 #print(df.groupby('cluster_from_dend')['feature1','feature2'].mean())
-#قالى على دى غلط 
 print(df['cluster_from_dend'].value_counts())
 
 #------------
@@ -393,7 +392,7 @@ plt.show()
 
 
 
-## 🌌 Day 17 – DBSCAN Clustering → detect outliers
+##  DBSCAN Clustering → detect outliers
 
 from sklearn.datasets import make_blobs
 X, _ = make_blobs(n_samples=200, centers=3, cluster_std=0.5, random_state=42)
@@ -414,7 +413,7 @@ plt.show()
 
 
 
-## 🔻 Day 18 – PCA (Dimensionality Reduction)
+## PCA (Dimensionality Reduction)
 
 
 np.random.seed(42)
@@ -455,7 +454,7 @@ plt.show()
 
 
 
-## 🌀 Day 19 – t-SNE visualization (MNIST small or synthetic)
+##  t-SNE visualization (MNIST small or synthetic)
 
 from sklearn.datasets import load_digits
 digits = load_digits()
@@ -478,12 +477,3 @@ for i,p in enumerate(perp):
   plt.title(f"when Perp = {p}")
 plt.tight_layout()
 plt.show()
-
-'''
-## 📏 Day 20 – Clustering evaluation (Elbow method, Silhouette score)
-
-from sklearn.datasets import make_blobs
-X, y = make_blobs(n_samples=300, centers=4, n_features=2, random_state=42)
-df = pd.DataFrame(X, columns=['feature1', 'feature2'])
-df.head()
-'''
